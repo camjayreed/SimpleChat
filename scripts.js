@@ -2,6 +2,7 @@
 document.getElementById("join-chat").addEventListener("click", connectUserToChat)
 function connectUserToChat() {
     console.log('user connected')
+    document.getElementById("user-chatroom").removeAttribute("hidden")
     localStorage.setItem("CurrentUser", document.getElementById("username").value)
     /* initiate websocket connection */
     /* grab and display all previous messages */ 
@@ -12,7 +13,7 @@ function connectUserToChat() {
 document.getElementById("leave-chat").addEventListener("click", userLeaveChat)
 function userLeaveChat() {
     console.log('user disconnected')
-    /* on leaving hide the chatroom, maybe display disconnected text */
+    document.getElementById("user-chatroom").setAttribute("hidden", true)
     return
 }
 
