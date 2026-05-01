@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+#info-bar {
+  padding: 10px;
+  background: #e0e0e0;
+  text-align: center;
+}
+
+#user-chatroom {
+  margin: 20px auto;
+  max-width: 400px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#send-messages {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  max-width: 400px;
+}
+
+#message-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

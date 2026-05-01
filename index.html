@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimleChat</title>
+    <title>SimpleChat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="info-bar">
+        <h1>SimpleChat</h1>
+        <input type="text" placeholder="Enter Username..." id="username">
+        <button id="join-chat">Join Chat</button>
+        <button id="leave-chat">Leave Chat</button>
+    </div>
+
+    <div id="user-chatroom">
+        <p>User: placeholder message</p>
+    </div>
+
+    <div id="send-messages">
+        <input type="text" placeholder="Enter Message..." id="message-input">
+    </div>
+   
+    <script src="scripts.js"></script>
 </body>
 </html>
