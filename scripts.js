@@ -1,15 +1,15 @@
-/* if user submits username, set current user to x in localstorage */
-document.getElementById("join-chat").addEventListener("click", connectUserToChat())
-
 /* if user joins chat */
+document.getElementById("join-chat").addEventListener("click", connectUserToChat)
 function connectUserToChat() {
     console.log('user connected')
+    /* set current user to x in localstorage */
     /* initiate websocket connection */
     /* grab and display all previous messages */ 
     return
 }
 
 /* if user leaves chatroom */
+document.getElementById("leave-chat").addEventListener("click", userLeaveChat)
 function userLeaveChat() {
     console.log('user disconnected')
     /* on leaving hide the chatroom, maybe display disconnected text */
