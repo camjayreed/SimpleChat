@@ -13,11 +13,12 @@ function connectUserToChat() {
 
   ws = new WebSocket("ws://127.0.0.1:8080");
   ws.addEventListener("message", (event) => {
-    const chatroom = document.getElementById("user-chatroom");
-    const newMessage = document.createTextNode(event.data);
-
-    chatroom.appendChild(newMessage);
-    })
+    const messagesDiv = document.getElementById("messages");
+    const messageElem = document.createElement("div");
+    messageElem.textContent = event.data;
+    messagesDiv.appendChild(messageElem);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  });
   /* grab and display all previous messages */
   return;
 }

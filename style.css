@@ -5,26 +5,42 @@ body {
   padding: 0;
 }
 
+#user-chatroom[hidden] {
+  display: none !important;
+}
+
 #info-bar {
   padding: 10px;
   background: #e0e0e0;
   text-align: center;
 }
 
+
 #user-chatroom {
+  display: flex;
+  flex-direction: column;
   margin: 20px auto;
   max-width: 400px;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
+  padding: 0;
+  height: 70vh;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
   padding: 10px;
 }
 
 #send-messages {
   display: flex;
   justify-content: center;
-  margin: 10px auto;
-  max-width: 400px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background: #f9f9f9;
+  max-width: 100%;
 }
 
 #message-input {
