@@ -12,9 +12,9 @@ A minimal real-time chat application using Node.js, WebSockets, and vanilla Java
 3. Install dependencies: npm install
 
 ### Running the Server
-Run a live server of index.html
-Start the WebSocket server: node server.js
-The server will run on `ws://localhost:8080` by default.
+1. Run a live server of index.html
+2. Start the WebSocket server: node server.js
+3. The server will run on `ws://localhost:8080` by default.
 
 ## Notes
 - This project is for learning/demo purposes. No authentication or message persistence.
