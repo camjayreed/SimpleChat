@@ -10,9 +10,9 @@ ws.on('connection', (ws) => {
 
   /* if we get message */
   ws.on('message', (data) => {
-    console.log(data.toString())
-
+    console.log(`User message received: "${data.toString()}"`)
     ws.send(data.toString());
+    console.log("Message sent to all users!")
   });
 
   ws.on('close', () => {
